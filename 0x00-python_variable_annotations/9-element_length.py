@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Defines task 8's module."""
-from typing import Callable
+"""Defines task 9's module."""
+from typing import Iterable, List, Sequence, Tuple
 
 
-def make_multiplier(multiplier: float) -> Callable[[float], float]:
-    """Creates a multiplier function."""
-    return lambda x: x * multiplier
+def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
+    """Computes the length of a list of sequences."""
+    return [(i, len(i)) for i in lst]
