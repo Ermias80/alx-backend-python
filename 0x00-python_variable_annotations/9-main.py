@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-"""Defines task 8's module."""
-from typing import Callable
 
+element_length =  __import__('9-element_length').element_length
 
-def make_multiplier(multiplier: float) -> Callable[[float], float]:
-    """Creates a multiplier function."""
-    return lambda x: x * multiplier
+print(element_length.__annotations__)
